@@ -1,0 +1,1 @@
+console.log("kismat love everyone")
