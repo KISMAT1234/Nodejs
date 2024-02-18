@@ -8,7 +8,8 @@ const myServer = http.createServer((req, res)=>{
     console.log(myUrl);
     fs.appendFile("log.txt",log,(err,data)=>{
         switch(myUrl.pathname){
-            case "/":res.end("Home page ")
+            case "/":
+            if(req.method === 'GET') res.end("/homepage")
             break;
             case "/about":
             const username = myUrl.query.name;
@@ -18,6 +19,11 @@ const myServer = http.createServer((req, res)=>{
                 const search = myUrl.query.search_query
                 res.end("Here are your results for" + search)
                 break;
+            case "/signup":
+                if(req.method === 'GET') res.end('This is a signup form'); 
+                 else if(req.method === 'POST') {
+                    res.end("success")
+                 }
             default:
                 res.sendDate("404 not found");
         }
