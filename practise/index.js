@@ -11,7 +11,7 @@ db();
 
 
 app.post('/cart',(req,res)=>{
-    const { name} =  req.body;
+    const {name} =  req.body;
     console.log(id,name,email)
     const user = new User({name})
     user.save().then((data)=>{

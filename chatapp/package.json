@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node stream.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.3",
+    "express-status-monitor": "^1.3.4",
     "socket.io": "^4.7.4"
   }
 }
