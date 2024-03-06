@@ -8,6 +8,7 @@ const app = express()
 const server = http.createServer(app);
 const io = new Server(server)
 
+// Socket io handling  
 io.on("connection",(socket)=>{
     socket.on("chatMessage",(message)=>{
         console.log("A new user Message",message)
