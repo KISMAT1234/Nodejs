@@ -38,6 +38,7 @@ section.chat__section {
     flex-direction: column;
     overflow-y: auto;
     padding-top: 40px;
+    background-image:url("background.jpg") ;
 }
 textarea {
     width: 100%;
@@ -49,24 +50,24 @@ textarea {
 }
 
 .message {
-    padding: 20px; 
-    border-radius: 4px; 
-    margin-bottom: 40px;
-    max-width: 300px;
+    padding: 8px 5px; 
+    border-radius: 8px; 
+    margin-bottom: 10px;
+    max-width: 100px;
     position: relative;
 }
 .incoming {
-    background: #8F8BE8;
+    background: rgb(34, 30, 30);
     color: #fff;  
 }
 .outgoing {
-    background: #e9eafd;
-    color: #787986;
+    background: #075e54;
+    color: white;
     margin-left: auto;
 }
 .message h4 {
     position: absolute;
-    top: -20px;
+    top: -5px;
     left: 0;
     color: #333;
     font-size: 14px;
