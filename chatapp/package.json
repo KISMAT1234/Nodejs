@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node stream.js"
+    "start": "node cluster.js"
   },
   "author": "",
   "license": "ISC",

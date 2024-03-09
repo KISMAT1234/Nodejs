@@ -10,9 +10,9 @@ const io = new Server(server)
 
 // Socket io handling  
 io.on("connection",(socket)=>{
-    socket.on("chatMessage",(message)=>{
-        console.log("A new user Message",message)
-        io.emit("message",message)
+    socket.on("chatMessage",(data)=>{
+        // console.log("A new user Message",data)
+        io.emit("message",data)
     })
 })
 
