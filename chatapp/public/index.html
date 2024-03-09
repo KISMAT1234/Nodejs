@@ -21,9 +21,9 @@
             const messageInput = document.getElementById("message")
             const allMessages = document.getElementById("messages")
 
-            socket.on("message", (message)=>{
+            socket.on("message", (value)=>{
                 const p = document.createElement("p");
-                p.innerText = message;
+                p.innerText = value;
                 allMessages.appendChild(p);
             })
 
