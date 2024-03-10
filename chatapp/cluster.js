@@ -1,6 +1,9 @@
 const cluster = require("node:cluster");
 const express =require('express');
 const os = require("os");
+const http = require('http'). createServer(app)
+const {Server} = require('socket.io')
+const io = new  Server(http)
 
 const totalCPUs = os.cpus().length;
 
